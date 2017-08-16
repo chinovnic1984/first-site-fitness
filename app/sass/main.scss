@@ -1,0 +1,162 @@
+.header {
+	background-color: #131415;
+	min-height: 76px;
+}
+
+.header-left {
+	float: left;
+}
+
+.logo__link {
+	color: #f89513;
+	font: {
+		family: Gora-Free;
+		size: 1.125em;
+	}
+}
+
+.phone__link {
+	color: #fff;
+	font: {
+		family: Open-Sans;
+		weight: Bold;
+		size: 1.3125em;
+	}
+}
+
+.time-schedule__link {
+	text-decoration: underline;
+	color: #b46f14;
+	font: {
+		family: Open-Sans;
+		weight: Bold;
+		size: 0.875em;
+	}
+}
+
+.header-right {
+	float: right;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+}
+
+.main-content{
+	float: left;
+	width: 80%;
+}
+
+.menu-link {
+	padding-left: 37px;
+	color: #f9aa42;
+	text-transform: uppercase;
+	font: {
+		family: Open-Sans;
+		weight: Bold;
+		size: 0.75em;
+	}
+}
+
+.about-company {
+	background: {
+		image: url(../img/main_background.jpg);
+		size: cover;
+		position: center;
+	}
+}
+
+.about-company__bg {
+	background-color: rgba(0,0,0,.5);
+	height: 355px;
+}
+
+.title {
+	color: #ffffff;
+	text-transform: uppercase;
+	font: {
+		family: Open-Sans;
+		weight: Bold;
+		size: 3.0625em;
+	}
+}
+
+.info-block {
+	background-color: black;
+	height: 144px;
+	width: 100%;
+}
+
+.info-block-text {
+	color: #ffffff;
+	font: {
+		family: Open-Sans;
+		weight: Light;
+		size: 1.125em;
+	}
+	line-height: 1.42;
+}
+
+.partners-item {
+	display: inline-block;
+}
+
+.footer {
+	background-color: #131415;
+	min-height: 76px;
+}
+
+.footer-copyrighting {
+	float: left;
+	width: 33.33%;
+}
+
+.author-text {
+	color: #efefef;
+	font: {
+		family: Open-Sans;
+		weight: Light;
+		size: 0.875em;
+	}
+}
+
+.author-link {
+	color: #ffffff;
+	font: {
+		family: Open-Sans;
+		weight: Bold;
+		size: 0.875em;
+	}
+}
+
+.author-link__underline {
+	text-decoration: underline;
+}
+
+.footer-logo{
+	float: left;
+	width: 33.33%;
+}
+
+.footer-socials {
+	float: right;
+	width: 33.33%;
+}
+
+.socials__text {
+	color: #efefef;
+	font: {
+		family: Open-Sans;
+		weight: Bold;
+		size: 0.875em;
+	}
+}
+
+.socials__item{
+	display: inline-block;
+}
+
+.socials__link {
+	color: #efefef;
+}

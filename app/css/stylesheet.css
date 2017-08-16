@@ -1,0 +1,48 @@
+.sprite-nav-feed-icon {
+    background-image: url(../img/nav-sprit.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 21px;
+    height: 19px;
+    background-position: -5px -5px;
+}
+
+.sprite-nav-feed-icon-active {
+    color: black;
+    background-image: url(../img/nav-sprit.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 21px;
+    height: 19px;
+    background-position: -36px -5px;
+}
+
+.sprite-nav-home-icon {
+    background-image: url(../img/nav-sprit.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 19px;
+    height: 14px;
+    background-position: -5px -34px;
+}
+
+.sprite-nav-home-icon-active {
+    width: 19px;
+    height: 14px;
+    background-position: -34px -34px;
+}
+
+.sprite-nav-service-icon {
+    background-image: url(../img/nav-sprit.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 19px;
+    height: 14px;
+    background-position: -67px -5px;
+}
+
+.sprite-nav-service-icon-active {
+    width: 19px;
+    height: 14px;
+    background-position: -67px -29px;
+}
