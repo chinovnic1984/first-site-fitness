@@ -22,7 +22,7 @@ li {
   list-style: none; }
 
 .container {
-  width: 1100px;
+  width: 1060px;
   margin: 0 auto; }
 
 .clearfix::after {

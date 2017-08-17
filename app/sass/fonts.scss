@@ -1,11 +1,21 @@
 @font-face {
-    font-family: "Gora-Free";
-    src: url(../fonts/Gora-Free.ttf) format('truetype');
-    font-weight: 400;
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/OpenSans-Bold.woff) format('woff');
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: "Open-Sans";
-    src: url(../fonts/OpenSans.ttf) format('truetype');
-    font-weight: 400;
+    font-family: "OpenSans-Light";
+    src: url(../fonts/OpenSans-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: "OpenSansLight-Italic";
+    src: url(../fonts/OpenSansLight-Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Gora-Free";
+    src: url(../fonts/GoraFree-Regular.woff) format('woff');
+    font-weight: 300;
 }

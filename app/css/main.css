@@ -5,22 +5,27 @@
 .header-left {
   float: left; }
 
+.logo {
+  padding: 25px 0px 25px 0px; }
+
 .logo__link {
   color: #f89513;
   font-family: Gora-Free;
   font-size: 1.125em; }
 
+.contacts {
+  padding: 12px 0px;
+  text-align: right; }
+
 .phone__link {
   color: #fff;
-  font-family: Open-Sans;
-  font-weight: Bold;
+  font-family: OpenSans-Bold;
   font-size: 1.3125em; }
 
 .time-schedule__link {
   text-decoration: underline;
   color: #b46f14;
-  font-family: Open-Sans;
-  font-weight: Bold;
+  font-family: OpenSans-Bold;
   font-size: 0.875em; }
 
 .header-right {
@@ -28,19 +33,28 @@
 
 .sidebar {
   float: left;
-  width: 20%; }
+  width: 17%; }
 
 .main-content {
   float: left;
-  width: 80%; }
+  width: 83%; }
+
+.menu-list {
+  padding-left: 0px; }
+  .menu-list:first-child {
+    margin-top: 43px; }
+
+.menu-item {
+  margin-bottom: 28px; }
 
 .menu-link {
   padding-left: 37px;
   color: #f9aa42;
   text-transform: uppercase;
-  font-family: Open-Sans;
-  font-weight: Bold;
+  font-family: OpenSans-Bold;
   font-size: 0.75em; }
+  .menu-link:hover {
+    color: black; }
 
 .about-company {
   background-image: url(../img/main_background.jpg);
@@ -52,11 +66,38 @@
   height: 355px; }
 
 .title {
+  padding: 143px 65px;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: Open-Sans;
-  font-weight: Bold;
+  font-family: OpenSans-Bold;
   font-size: 3.0625em; }
+
+.info-content {
+  width: 700px; }
+
+.info-text {
+  line-height: 1.70;
+  font-family: OpenSans-Light;
+  font-size: 1.125em; }
+
+.info-paragraph__top {
+  margin-top: 22px; }
+
+.info-paragraph {
+  margin-top: 15px; }
+
+.info-paragraph__bold {
+  font-family: OpenSans-Bold; }
+
+.info-text-list {
+  margin-top: 7px;
+  margin-bottom: 22px; }
+
+.info-text-item {
+  list-style-type: square;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  padding-left: 10px; }
 
 .info-block {
   background-color: black;
@@ -64,14 +105,41 @@
   width: 100%; }
 
 .info-block-text {
+  margin-left: 30px;
+  padding: 10px 0px;
+  line-height: 1.74;
   color: #ffffff;
-  font-family: Open-Sans;
-  font-weight: Light;
-  font-size: 1.125em;
-  line-height: 1.42; }
+  font-family: OpenSans-Light;
+  font-size: 1.125em; }
+
+.info-block__bold {
+  font-family: OpenSans-Bold; }
+
+.partners {
+  margin: 55px 0px 37px 0px; }
+
+.partners-title {
+  text-transform: uppercase;
+  font-family: OpenSans-Bold;
+  font-size: 3.0625em; }
+
+.partners-list {
+  margin-top: 32px; }
 
 .partners-item {
-  display: inline-block; }
+  text-align: center;
+  width: 160px;
+  height: 80px;
+  display: inline-block;
+  margin-left: 105px; }
+  .partners-item:nth-child(3n+1) {
+    margin-left: 0; }
+
+.partners-pic {
+  filter: grayscale(100%); }
+  .partners-pic:hover {
+    filter: none;
+    transition: 2s; }
 
 .footer {
   background-color: #131415;
@@ -79,39 +147,44 @@
 
 .footer-copyrighting {
   float: left;
-  width: 33.33%; }
+  width: 25%; }
+
+.author {
+  padding: 9px 0px; }
 
 .author-text {
   color: #efefef;
-  font-family: Open-Sans;
-  font-weight: Light;
+  font-family: OpenSans-Light;
   font-size: 0.875em; }
 
 .author-link {
   color: #ffffff;
-  font-family: Open-Sans;
-  font-weight: Bold;
-  font-size: 0.875em; }
+  font-family: OpenSans-Bold; }
 
 .author-link__underline {
   text-decoration: underline; }
 
 .footer-logo {
+  text-align: center;
   float: left;
-  width: 33.33%; }
+  width: 58%; }
 
 .footer-socials {
+  padding: 10px 0px;
   float: right;
-  width: 33.33%; }
+  width: 17%; }
 
 .socials__text {
+  margin-bottom: 10px;
   color: #efefef;
-  font-family: Open-Sans;
-  font-weight: Bold;
+  font-family: OpenSans-Bold;
   font-size: 0.875em; }
 
 .socials__item {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 10px; }
+  .socials__item:first-child {
+    margin-left: 0; }
 
 .socials__link {
   color: #efefef; }

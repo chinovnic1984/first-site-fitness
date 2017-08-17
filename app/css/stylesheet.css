@@ -1,47 +1,41 @@
-.sprite-nav-feed-icon {
-    background-image: url(../img/nav-sprit.png);
-    background-repeat: no-repeat;
+.sprite:before {
+    content: "";
+    background: url(../img/nav-sprit.png) center no-repeat;
     display: block;
+    position: absolute;
+}
+
+.sprite-nav-feed-icon:before {
     width: 21px;
     height: 19px;
     background-position: -5px -5px;
 }
 
-.sprite-nav-feed-icon-active {
-    color: black;
-    background-image: url(../img/nav-sprit.png);
-    background-repeat: no-repeat;
-    display: block;
+.sprite-nav-feed-icon-active:hover:before {
     width: 21px;
     height: 19px;
     background-position: -36px -5px;
 }
 
-.sprite-nav-home-icon {
-    background-image: url(../img/nav-sprit.png);
-    background-repeat: no-repeat;
-    display: block;
+.sprite-nav-home-icon:before {
     width: 19px;
     height: 14px;
     background-position: -5px -34px;
 }
 
-.sprite-nav-home-icon-active {
+.sprite-nav-home-icon-active:hover:before {
     width: 19px;
     height: 14px;
     background-position: -34px -34px;
 }
 
-.sprite-nav-service-icon {
-    background-image: url(../img/nav-sprit.png);
-    background-repeat: no-repeat;
-    display: block;
+.sprite-nav-service-icon:before {
     width: 19px;
     height: 14px;
     background-position: -67px -5px;
 }
 
-.sprite-nav-service-icon-active {
+.sprite-nav-service-icon-active:hover:before {
     width: 19px;
     height: 14px;
     background-position: -67px -29px;
