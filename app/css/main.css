@@ -56,6 +56,13 @@
   .menu-link:hover {
     color: black; }
 
+.menu-link__current {
+  padding-left: 37px;
+  color: #131415;
+  text-transform: uppercase;
+  font-family: OpenSans-Bold;
+  font-size: 0.75em; }
+
 .about-company {
   background-image: url(../img/main_background.jpg);
   background-size: cover;

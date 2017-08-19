@@ -11,7 +11,13 @@
     background-position: -5px -5px;
 }
 
-.sprite-nav-feed-icon-active:hover:before {
+.sprite-nav-feed-icon-active:before {
+    width: 21px;
+    height: 19px;
+    background-position: -36px -5px;
+}
+
+.sprite-nav-feed-icon-active-hover:hover:before {
     width: 21px;
     height: 19px;
     background-position: -36px -5px;
@@ -23,7 +29,13 @@
     background-position: -5px -34px;
 }
 
-.sprite-nav-home-icon-active:hover:before {
+.sprite-nav-home-icon-active:before {
+    width: 19px;
+    height: 14px;
+    background-position: -34px -34px;
+}
+
+.sprite-nav-home-icon-active-hover:hover:before {
     width: 19px;
     height: 14px;
     background-position: -34px -34px;
@@ -35,7 +47,13 @@
     background-position: -67px -5px;
 }
 
-.sprite-nav-service-icon-active:hover:before {
+.sprite-nav-service-icon-active:before {
+    width: 19px;
+    height: 14px;
+    background-position: -67px -29px;
+}
+
+.sprite-nav-service-icon-active-hover:hover:before {
     width: 19px;
     height: 14px;
     background-position: -67px -29px;

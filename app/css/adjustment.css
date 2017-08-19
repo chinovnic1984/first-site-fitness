@@ -42,3 +42,6 @@ li {
   height: 75px;
   margin-top: -75px;
   position: relative; }
+
+* {
+  box-sizing: border-box; }
