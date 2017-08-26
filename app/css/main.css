@@ -28,6 +28,46 @@
   font-family: OpenSans-Bold;
   font-size: 0.875em; }
 
+.time-schedule {
+  position: relative; }
+
+.time-schedual__popup {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 8px;
+  width: 163px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  text-align: center;
+  z-index: 40;
+  padding: 13px;
+  text-align: right; }
+
+.time-schedual__popup:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #f4f4f4;
+  transform: rotate(45deg);
+  bottom: 61px;
+  left: 142px;
+  z-index: -1; }
+
+.time-schedule__link:hover + .time-schedual__popup {
+  display: block; }
+
+.time-schedual__popup-time {
+  font-family: OpenSans-Bold;
+  font-size: 0.875em;
+  color: #f89513; }
+
+.time-schedual__popup-lunch {
+  font-family: OpenSans-Light;
+  font-size: 0.875em; }
+
 .header-right {
   float: right; }
 
