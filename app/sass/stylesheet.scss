@@ -1,8 +1,9 @@
 .sprite:before {
     content: "";
-    background: url(../img/nav-sprit.png) center no-repeat;
+    background: url(../img/nav-sprit.png) bottom no-repeat;
     display: block;
     position: absolute;
+    background-position: 0 10px;
 }
 
 .sprite-nav-feed-icon:before {
@@ -24,37 +25,37 @@
 }
 
 .sprite-nav-home-icon:before {
-    width: 19px;
-    height: 14px;
-    background-position: -5px -34px;
+    width: 21px;
+    height: 19px;
+    background-position: -5px -31px;
 }
 
 .sprite-nav-home-icon-active:before {
-    width: 19px;
-    height: 14px;
-    background-position: -34px -34px;
+    width: 21px;
+    height: 19px;
+    background-position: -34px -31px;
 }
 
 .sprite-nav-home-icon-active-hover:hover:before {
-    width: 19px;
-    height: 14px;
-    background-position: -34px -34px;
+    width: 21px;
+    height: 19px;
+    background-position: -34px -31px;
 }
 
 .sprite-nav-service-icon:before {
-    width: 19px;
-    height: 14px;
-    background-position: -67px -5px;
+    width: 21px;
+    height: 19px;
+    background-position: -67px -1px;
 }
 
 .sprite-nav-service-icon-active:before {
-    width: 19px;
-    height: 14px;
-    background-position: -67px -29px;
+    width: 21px;
+    height: 19px;
+    background-position: -67px -25px;
 }
 
 .sprite-nav-service-icon-active-hover:hover:before {
-    width: 19px;
-    height: 14px;
-    background-position: -67px -29px;
+    width: 21px;
+    height: 19px;
+    background-position: -67px -25px;
 }

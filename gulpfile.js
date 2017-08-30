@@ -14,9 +14,9 @@ gulp.task('server', function () {
 
 //Подключаем Sass
 gulp.task('sass', function() {
-	return gulp.src(['app/sass/*.sass','app/sass/*.scss'])
+	    gulp.src(['./sass/*.sass','./sass/*.scss'])
 		.pipe(sass({outputStyle: 'expended'}) .on('error', sass.logError))
-		.pipe(gulp.dest('app/css'))
+		.pipe(gulp.dest('./css'))
 		.pipe(browserSync.stream())
 });
 

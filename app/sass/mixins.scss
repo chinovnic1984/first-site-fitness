@@ -1,0 +1,10 @@
+@mixin font($family,$size) {
+	font-family: OpenSans-+$family;
+	font-size: $size;
+}
+
+%clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}

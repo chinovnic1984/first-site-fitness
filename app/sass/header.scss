@@ -1,0 +1,85 @@
+.header {
+	background-color: #131415;
+	min-height: 76px;
+	@extend %clearfix;
+}
+
+.header-left {
+	float: left;
+}
+
+.logo {
+	padding: 25px 0px 25px 0px;
+}
+
+.logo__link {
+	color: $orange;
+	font: {
+		family: Gora-Free;
+		size: 1.125em;
+	}
+}
+
+.header-right {
+	float: right;
+}
+
+.contacts {
+	padding: 12px 0px;
+	text-align: right;
+}
+
+.contacts__phone-link {
+	color: $white;
+	@include font(Bold,1.3125em)
+}
+
+.contacts__schedule {
+	position: relative;
+}
+
+.contacts__schedule-link {
+	text-decoration: underline;
+	color: #b46f14;
+	@include font(Bold,0.875em);
+}
+
+.schedule-popup {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 8px;
+	width: 163px;
+	height: 70px;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	text-align: center;
+	z-index: 40;
+	padding: 13px;
+	text-align: right;
+}
+
+.schedule-popup:before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: #f4f4f4;
+	transform: rotate(45deg);
+	bottom: 61px;
+	left: 142px;
+	z-index: -1;
+}
+
+.contacts__schedule-link:hover +.schedule-popup {
+	display: block;
+}
+
+.schedule-popup__time {
+	@include font(Bold,0.875em);
+	color: $orange;
+}
+
+.schedule-popup__lunch {
+	@include font(Light,0.875em);
+}

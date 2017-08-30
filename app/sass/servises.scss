@@ -1,44 +1,9 @@
-.breadcrumps {
-	margin-top: 40px;
-	margin-bottom: 8px;
-}
-
-.breadcrumps-item {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.breadcrumps-link {
-	color: #f9aa42;
-	vertical-align: middle;
-	text-decoration: underline;
-	font: {
-		family: OpenSansLight-Italic;
-		size: 0.875em;
-	}
-}
-
-.breadcrumps-link-active {
-	vertical-align: middle;
-	text-decoration: none;
-	color: #4e4c4c;
-	&:before {
-		content: "/";
-		vertical-align: middle;
-		display: inline-block;
-		padding-right: 5px;
-	}
-}
-
 .servises-title {
 	margin-bottom: 37px;
 }
 
 .servises-title-name {
-	font: {
-		family: OpenSans-Bold;
-		size: 2.8125em;
-	}
+	@include font(Bold,2.8125em);
 }
 
 .servises-list {
@@ -64,17 +29,11 @@
 
 .servises-name {
 	padding-top: 20px;
-	font: {
-		family: OpenSans-Bold;
-		size: 1.125em;
-	}
+	@include font(Bold,1.125em);
 }
 
 .servises-description {
 	padding-top: 5px;
 	line-height: 21px;
-	font: {
-		family: OpenSans-Light;
-		size: 0.875em;
-	}
+	@include font(Light,0.875em);
 }

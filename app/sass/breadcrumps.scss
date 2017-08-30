@@ -1,0 +1,28 @@
+.breadcrumps {
+	margin-top: 40px;
+	margin-bottom: 8px;
+}
+
+.breadcrumps-item {
+	display: inline-block;
+}
+
+.breadcrumps-link {
+	color: #f9aa42;
+	vertical-align: bottom;
+	text-decoration: underline;
+	font: {
+		family: OpenSansLight-Italic;
+		size: 0.875em;
+	}
+}
+
+.breadcrumps-link-active {
+	text-decoration: none;
+	color: #4e4c4c;
+	&:before {
+		content: "/";
+		vertical-align: bottom;
+		padding-right: 5px;
+	}
+}

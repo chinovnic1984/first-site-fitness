@@ -1,0 +1,26 @@
+// =================var
+
+$white: #fff;
+$orange: #f89513;
+
+// =================layout
+
+@import "mixins";
+@import "normalize";
+@import "adjustment";
+@import "fonts";
+// =================sprite
+
+@import "socials-stylesheet";
+@import "stylesheet";
+
+// ================components
+
+@import "header";
+@import "breadcrumps";
+@import "main";
+@import "servises";
+@import "reviews";
+@import "footer";
+
+
