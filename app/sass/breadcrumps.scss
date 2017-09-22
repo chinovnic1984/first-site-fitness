@@ -3,21 +3,21 @@
 	margin-bottom: 8px;
 }
 
-.breadcrumps-item {
+.breadcrumps__item {
 	display: inline-block;
 }
 
-.breadcrumps-link {
+.breadcrumps__link {
 	color: #f9aa42;
 	vertical-align: bottom;
 	text-decoration: underline;
 	font: {
 		family: OpenSansLight-Italic;
-		size: 0.875em;
+		size: 14px;
 	}
 }
 
-.breadcrumps-link-active {
+.breadcrumps__link_active {
 	text-decoration: none;
 	color: #4e4c4c;
 	&:before {

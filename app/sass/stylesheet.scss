@@ -1,9 +1,12 @@
+.sprite {
+    position: relative;
+}
+
 .sprite:before {
     content: "";
     background: url(../img/nav-sprit.png) bottom no-repeat;
-    display: block;
     position: absolute;
-    background-position: 0 10px;
+    left: 0;
 }
 
 .sprite-nav-feed-icon:before {

@@ -2,38 +2,38 @@
 	margin-bottom: 37px;
 }
 
-.servises-title-name {
-	@include font(Bold,2.8125em);
+.servises-title__name {
+	@include font(Bold,45px);
 }
 
-.servises-list {
+.servises-block__list {
 	margin-bottom: 21px;
 }
 
-.servises-item {
+.servises-block__item {
 	display: inline-block;
 	margin-left: 42px;
 	margin-bottom: 45px;
 	width: 260px;
 	vertical-align: top;
 }
-.servises-item:nth-child(3n+1) {
+.servises-block__item:nth-child(3n+1) {
 	margin: 0px;
 }
 
-.servises-item-image {
+.servises-block__image {
 	margin-right: 2px;
 	max-width: 260px;
 	max-height: 155px;
 }
 
-.servises-name {
+.servises-block__name {
 	padding-top: 20px;
-	@include font(Bold,1.125em);
+	@include font(Bold,18px);
 }
 
-.servises-description {
+.servises-block__description {
 	padding-top: 5px;
 	line-height: 21px;
-	@include font(Light,0.875em);
+	@include font(Light,14px);
 }

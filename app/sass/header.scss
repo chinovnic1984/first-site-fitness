@@ -16,7 +16,7 @@
 	color: $orange;
 	font: {
 		family: Gora-Free;
-		size: 1.125em;
+		size: 18px;
 	}
 }
 
@@ -31,7 +31,7 @@
 
 .contacts__phone-link {
 	color: $white;
-	@include font(Bold,1.3125em)
+	@include font(Bold,21px)
 }
 
 .contacts__schedule {
@@ -41,7 +41,7 @@
 .contacts__schedule-link {
 	text-decoration: underline;
 	color: #b46f14;
-	@include font(Bold,0.875em);
+	@include font(Bold,14px);
 }
 
 .schedule-popup {
@@ -49,14 +49,12 @@
 	position: absolute;
 	top: 40px;
 	left: 8px;
-	width: 163px;
-	height: 70px;
+	width: 162px;
 	border-radius: 5px;
 	background-color: #f4f4f4;
-	text-align: center;
 	z-index: 40;
-	padding: 13px;
-	text-align: right;
+	padding: 19px;
+	text-align: left;
 }
 
 .schedule-popup:before {
@@ -66,8 +64,8 @@
 	height: 16px;
 	background-color: #f4f4f4;
 	transform: rotate(45deg);
-	bottom: 61px;
-	left: 142px;
+	bottom: 73px;
+	left: 140px;
 	z-index: -1;
 }
 
@@ -76,10 +74,11 @@
 }
 
 .schedule-popup__time {
-	@include font(Bold,0.875em);
+	@include font(Bold,14px);
 	color: $orange;
+	margin-bottom: 5px;
 }
 
 .schedule-popup__lunch {
-	@include font(Light,0.875em);
+	@include font(Light,14px);
 }

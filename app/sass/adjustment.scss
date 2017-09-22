@@ -32,12 +32,6 @@ li {
 	margin: 0 auto;
 }
 
-.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
 .wrapper {
 	min-width: $container-width + 20px;
 	position: relative;

@@ -13,17 +13,17 @@
 	padding: 9px 0px;
 }
 
-.author-text {
+.author__text {
 	color: #efefef;
-	@include font(Light,0.875em);
+	@include font(Light,14px);
 }
 
-.author-link {
+.author__link {
 	color: $white;
 	font-family: OpenSans-Bold;
 }
 
-.author-link__underline {
+.author__link_underline {
 	text-decoration: underline;
 }
 
@@ -39,10 +39,10 @@
 	width: 17%;
 }
 
-.socials__text {
+.socials__title {
 	margin-bottom: 10px;
 	color: #efefef;
-	@include font(Bold,0.875em);
+	@include font(Bold,14px);
 }
 
 .socials__item{

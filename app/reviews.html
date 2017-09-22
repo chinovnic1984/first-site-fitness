@@ -14,19 +14,28 @@
 		<!-- =============================HEADER====================================== -->
 
 		<header class="header">
-			<div class="container clearfix">
+			<div class="container">
 				<div class="header-left">
+
+					<!--================================= LOGO ===========================-->
+
 					<div class="logo">
 						<a href="#" class="logo__link">Афродита</a>
 					</div>
 				</div>
 				<div class="header-right">
+
+					<!--================================== CONTACTS ======================-->
+
 					<div class="contacts">
 						<div class="contacts__phone">
 							<a href="tel:+71234567777;" class="contacts__phone-link">8 (800) 00-392-10</a>
 						</div>
 						<div class="contacts__schedule">
 							<a href="" class="contacts__schedule-link">График работы</a>
+
+							<!--======================= SCHEDUALE-POPUP ==================-->
+
 							<div class="schedule-popup">
 								<p class="schedule-popup__time">пн-вс: 09:00-20:00</p>
 								<p class="schedule-popup__lunch">обед: 14:00-14:30</p>
@@ -40,79 +49,93 @@
 		<!-- ===============================MAIN PAGES================================== -->
 
 		<main class="main-pages">
-			<div class="container clearfix">
+			<div class="container">
 
 				<!-- ===========================SIDEBAR================================= -->
 
 				<aside class="sidebar">
-					<ul class="menu-list">
-						<li class="menu-item">
-							<a href="index.html" class="menu-link sprite sprite-nav-home-icon sprite-nav-home-icon-active-hover">Главная</a>
-						</li>	
-						<li class="menu-item">
-							<a href="servises.html" class="menu-link sprite sprite-nav-service-icon sprite-nav-service-icon-active-hover">Услуги</a>
-						</li>
-						<li class="menu-item">
-							<a href="reviews.html" class="menu-link__current sprite sprite-nav-feed-icon-active">Отзывы</a>
-						</li>
-					</ul>
+					<nav class="nav-menu">
+						<ul class="nav-menu__list">
+							<li class="nav-menu__item">
+								<a href="index.html" class="nav-menu__link sprite sprite-nav-home-icon sprite-nav-home-icon-active-hover">Главная</a>
+							</li>	
+							<li class="nav-menu__item">
+								<a href="servises.html" class="nav-menu__link sprite sprite-nav-service-icon sprite-nav-service-icon-active-hover">Услуги</a>
+							</li>
+							<li class="nav-menu__item">
+								<a href="reviews.html" class="nav-menu__link_current sprite sprite-nav-feed-icon-active">Отзывы</a>
+							</li>
+						</ul>
+					</nav>
 				</aside>
 
 				<!-- ==========================MAIN CONTENT============================== -->
 
 				<div class="main-content">
+
+					<!--============================= BREADCRUMPS ========================-->
+
 					<div class="breadcrumps">
-						<ul class="breadcrumps-list">
-							<li class="breadcrumps-item">
-								<a class="breadcrumps-link" href="index.html">Главная</a>
+						<ul class="breadcrumps__list">
+							<li class="breadcrumps__item">
+								<a class="breadcrumps__link" href="index.html">Главная</a>
 							</li>
-							<li class="breadcrumps-item">
-								<a class="breadcrumps-link breadcrumps-link-active" href="servises.html">Отзывы</a>
+							<li class="breadcrumps__item">
+								<a class="breadcrumps__link breadcrumps__link_active" href="servises.html">Отзывы</a>
 							</li>
 						</ul>
 					</div>
+
+					<!--=========================== REVIEWS-TITLE ========================-->
+
 					<div class="reviews-title">
-						<h1 class="reviews-title-name">Отзывы</h1>
+						<h1 class="reviews-title__name">Отзывы</h1>
 					</div>
+
+					<!--============================= REVIEWS-BLOCK ======================-->
+
 					<ul class="reviews-block">
-						<li class="reviews-item clearfix">
-							<div class="reviews-photo" style="background: url(img/jpg/reviews-photo-1.jpg) center no-repeat"></div>
+						<li class="reviews-block__item">
+							<div class="reviews-block__photo" style="background: url(img/jpg/reviews-photo-1.jpg) center no-repeat"></div>
 							<div class="reviews-body">
-								<span class="reviews-date">12.10.2016</span>
-								<h3 class="reviews-name">Алексей Воронов</h3>
-								<p class="reviews-text">Пришел, чтобы похудеть немного к лету, но благодаря тренеру Александру Ковалеву, получилось накачать нормальные банки. Втянулся, теперь занимаюсь регулярно, 2 раза в неделю, доволен и всем советую. Кстати, польза от тренировок намного заметнее, если придерживаться ПП. Рацион мне составили на неделю, но я его повторяю, не надоедает.</p>
+								<span class="reviews-body__date">12.10.2016</span>
+								<h3 class="reviews-body__name">Алексей Воронов</h3>
+								<p class="reviews-body__text">Пришел, чтобы похудеть немного к лету, но благодаря тренеру Александру Ковалеву, получилось накачать нормальные банки. Втянулся, теперь занимаюсь регулярно, 2 раза в неделю, доволен и всем советую. Кстати, польза от тренировок намного заметнее, если придерживаться ПП. Рацион мне составили на неделю, но я его повторяю, не надоедает.</p>
 							</div>
 						</li>
-						<li class="reviews-item clearfix">
-							<div class="reviews-photo" style="background: url(img/jpg/reviews-photo-2.jpg) center no-repeat"></div>
+						<li class="reviews-block__item">
+							<div class="reviews-block__photo" style="background: url(img/jpg/reviews-photo-2.jpg) center no-repeat"></div>
 							<div class="reviews-body">
-								<span class="reviews-date">01.02.2016</span>
-								<h3 class="reviews-name">Инна Смольная</h3>
-								<p class="reviews-text">Подарили на день рождения абонемент в бассейн, пришлось воспользоваться. Сама бы я сюда не пришла, не очень нравится плавать с мужиками, которые пялятся постоянно, администрации следует обратить внимание на этот вопрос! Еще бросилось в глаза хамство обслуживающего персонала. Уборщица в раздевалке вела себя, как будто это к ней в гости пришли.</p>
+								<span class="reviews-body__date">01.02.2016</span>
+								<h3 class="reviews-body__name">Инна Смольная</h3>
+								<p class="reviews-body__text">Подарили на день рождения абонемент в бассейн, пришлось воспользоваться. Сама бы я сюда не пришла, не очень нравится плавать с мужиками, которые пялятся постоянно, администрации следует обратить внимание на этот вопрос! Еще бросилось в глаза хамство обслуживающего персонала. Уборщица в раздевалке вела себя, как будто это к ней в гости пришли.</p>
 							</div>
 						</li>
-						<li class="reviews-item clearfix">
-							<div class="reviews-photo"></div>
+						<li class="reviews-block__item">
+							<div class="reviews-block__photo"></div>
 							<div class="reviews-body">
-								<span class="reviews-date">22.12.2015</span>
-								<h3 class="reviews-name">Владимир Савельев</h3>
-								<p class="reviews-text">Норм клуб, железа хватает, но техника устаревшая. За эту цену – прокатит. Если хотите большего, то обращайтесь в специализированные тренажерки с новым железом и европейской техникой.</p>
+								<span class="reviews-body__date">22.12.2015</span>
+								<h3 class="reviews-body__name">Владимир Савельев</h3>
+								<p class="reviews-body__text">Норм клуб, железа хватает, но техника устаревшая. За эту цену – прокатит. Если хотите большего, то обращайтесь в специализированные тренажерки с новым железом и европейской техникой.</p>
 							</div>
 						</li>
-						<li class="reviews-item clearfix">
-							<div class="reviews-photo" style="background: url(img/jpg/reviews-photo-3.jpg) center no-repeat"></div>
+						<li class="reviews-block__item">
+							<div class="reviews-block__photo" style="background: url(img/jpg/reviews-photo-3.jpg) center no-repeat"></div>
 							<div class="reviews-body">
-								<span class="reviews-date">14.08.2015</span>
-								<h3 class="reviews-name">Ирина Савина</h3>
-								<p class="reviews-text">Занимаюсь 4й месяц на петлях ТРХ и очень нравится результат. Даже знакомые отметили, что я помолодела, появилась талия, ножки постройнели. Нагрузка сначала была непривычная, но втягиваешься быстро, тем более, что отражение в зеркале радует. Цены приятные, а если платить на полгода вперед, то вообще выгодно получается, скидка почти 30%.</p>
+								<span class="reviews-body__date">14.08.2015</span>
+								<h3 class="reviews-body__name">Ирина Савина</h3>
+								<p class="reviews-body__text">Занимаюсь 4й месяц на петлях ТРХ и очень нравится результат. Даже знакомые отметили, что я помолодела, появилась талия, ножки постройнели. Нагрузка сначала была непривычная, но втягиваешься быстро, тем более, что отражение в зеркале радует. Цены приятные, а если платить на полгода вперед, то вообще выгодно получается, скидка почти 30%.</p>
 							</div>
 						</li>
 					</ul>
+
+					<!--============================ PAGE-SELECTION ======================-->
+
 					<div class="page-selection">
-						<span class="page-selection-text">Страница 1 из 7</span>
+						<span class="page-selection__text">Страница 1 из 7</span>
 						<ul class="page-selection__list">
 							<li class="page-selection__item">
-								<a href="#" class="page-selection__link link-pic"><</a>
+								<a href="#" class="page-selection__link page-selection__pic"><</a>
 							</li>
 							<li class="page-selection__item">
 								<a href="#" class="page-selection__link">1</a>
@@ -136,11 +159,14 @@
 								<a href="#" class="page-selection__link">7</a>
 							</li>
 							<li class="page-selection__item">
-								<a href="#" class="page-selection__link link-pic2">></a>
+								<a href="#" class="page-selection__link page-selection__pic2">></a>
 							</li>
 						</ul>
-					</div>	
-					<form class="reviews-form clearfix" action="#" method="post">
+					</div>
+
+					<!--============================= REVIEWS-FORM =======================-->
+
+					<form class="reviews-form" action="#" method="post">
 						<h3 class="reviews-form__title">Оставить отзыв</h3>
 						<div class="form-field-left">
 							<label for="form-name" class="form-field__name">Ваше имя</label>
@@ -154,14 +180,14 @@
 							<label for="form-rew" class="form-field__name">Текст отзыва</label>
 							<textarea class="form-field__textarea" name="" id="form-rew" placeholder="Мне понравилось"></textarea>
 						</div>
-						<div class="form-reviews__photo">
+						<div class="reviews-form__photo">
 							<p class="form-field__photo">Отображать фото в отзыве?</p>
 							<input type="radio" name="photo" class="main-addfeed__value" value="yes" id="add__yes">
                             <label for="add__yes" class="main-addfeed__label-value">Да</label>
                             <input type="radio" name="photo" class="main-addfeed__value" value="no" id="add__no">
                             <label for="add__no" class="main-addfeed__label-value">Нет</label>
 						</div>
-						<button class="reviews-button">Отправить</button>
+						<button class="reviews-form__button">Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -172,14 +198,14 @@
 	<!-- ======================================FOOTER==================================== -->
 
 	<footer class="footer">
-		<div class="container clearfix">
+		<div class="container">
 			<div class="footer-copyrighting">
 				<div class="author">
-					<p class="author-text">Сделано с любовью и старанием</p>
-					<p class="author-text">на курсе «HTML + CSS» в
-						<a class="author-link author-link__underline" href="https://loftschool.com/" target="_blank">loftschool</a></p>
-					<p class="author-text">Автор работы:
-						<a class="author-link" href="#">Андрианов Станислав</a></p>
+					<p class="author__text">Сделано с любовью и старанием</p>
+					<p class="author__text">на основе видеоуроков в
+						<a class="author__link author__link_underline" href="https://loftschool.com/" target="_blank">loftschool</a></p>
+					<p class="author__text">Автор работы:
+						<a class="author__link" href="#">Андрианов Станислав</a></p>
 				</div>
 			</div>
 			<div class="footer-logo">
@@ -188,7 +214,7 @@
 				</div>
 			</div>
 			<div class="footer-socials">
-				<div class="socials__text">Наши социальные сети</div>
+				<div class="socials__title">Наши социальные сети</div>
 				<ul class="socials__list">
 					<li class="socials__item">
 						<a class="socials__link socials-sprite sprite-vk sprite-vk-hover" href="#"></a>

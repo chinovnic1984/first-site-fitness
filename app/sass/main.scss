@@ -2,42 +2,9 @@
 	@extend %clearfix;
 }
 
-.sidebar {
-	float: left;
-	width: 17%;
-}
-
 .main-content{
 	float: left;
 	width: 83%;
-}
-
-.menu-list {
-	padding-left: 0px;
-	&:first-child {
-		margin-top: 43px;
-	}
-}
-
-.menu-item {
-	margin-bottom: 28px;
-}
-
-.menu-link {
-	padding-left: 37px;
-	color: #f9aa42;
-	text-transform: uppercase;
-	@include font(Bold,0.75em);
-	&:hover {
-		color: black;
-	}
-}
-
-.menu-link__current {
-	padding-left: 37px;
-	color: #131415;
-	text-transform: uppercase;
-	@include font(Bold,0.75em);
 }
 
 .about-company {
@@ -53,11 +20,11 @@
 	height: 355px;
 }
 
-.title {
+.about-company__title {
 	padding: 143px 65px;
 	color: $white;
 	text-transform: uppercase;
-	@include font(Bold,3.0625em);
+	@include font(Bold,49px);
 }
 
 .info-content {
@@ -65,66 +32,58 @@
 }
 
 .info-text {
-	line-height: 1.70;
-	@include font(Light,1.125em);
+	line-height: 29px;
+	@include font(Light,18px);
+	p {
+		padding-top: 21px;
+	}
+	strong {
+		font-family: OpenSans-Bold;
+	}
 }
 
-.info-paragraph__top {
-	margin-top: 22px;
-}
-
-.info-paragraph {
-	margin-top: 15px;
-}
-
-.info-paragraph__bold {
-	font-family: OpenSans-Bold;
-}
-
-.info-text-list {
+.info-text__list {
 	margin-top: 7px;
 	margin-bottom: 22px;
-}
-
-.info-text-item {
-	list-style-type: square;
-	margin-left: 30px;
-	margin-bottom: 5px;
-	padding-left: 10px;
+	li {
+		list-style-type: square;
+		margin-left: 30px;
+		margin-bottom: 5px;
+		padding-left: 10px;
+	}
 }
 
 .info-block {
 	background-color: black;
 	height: 144px;
 	width: 100%;
-}
-
-.info-block-text {
-	margin-left: 30px;
-	padding: 10px 0px;
-	line-height: 1.74;
-	color: $white;
-	@include font(Light,1.125em);
-}
-
-.info-block__bold {
-	font-family: OpenSans-Bold;
+	margin-bottom: 55px;
+	p {
+		margin-left: 30px;
+		padding: 10px 0px;
+		line-height: 29px;
+		color: $white;
+		@include font(Light,18px);
+	}
+	strong {
+		font-family: OpenSans-Bold;
+	}
 }
 
 .partners {
-	margin: 55px 0px 37px 0px;
+	margin-bottom: 37px;
 }
 
-.partners-title {
+.partners__title {
 	text-transform: uppercase;
-	@include font(Bold,3.0625em);
+	@include font(Bold,49px);
 }
 
-.partners-list {
+.partners__list {
 	margin-top: 32px;
 }
 
-.partners-item {
+.partners__item {
 	text-align: center;	
 	width: 160px;
 	height: 80px;
@@ -135,7 +94,7 @@
 	}
 }
 
-.partners-pic {
+.partners__pic {
 	filter: grayscale(100%);
 	&:hover {
 		filter: none;

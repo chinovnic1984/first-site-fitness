@@ -2,15 +2,16 @@
 	margin-bottom: 28px;
 }
 
-.reviews-title-name {
-	@include font(Bold,3.0625em);
+.reviews-title__name {
+	@include font(Bold,49px);
 }
 
 .reviews-block {
 	margin-bottom: 33px;
 }
 
-.reviews-item {
+.reviews-block__item {
+	@extend %clearfix;
 	padding-bottom: 27px;
 	margin-bottom: 25px;
 	border-bottom: 2px solid #f5f5f5;
@@ -19,7 +20,7 @@
 	}
 }
 
-.reviews-photo {
+.reviews-block__photo {
 	width: 160px;
 	height: 160px;
 	float: left;
@@ -34,19 +35,19 @@
 	width: 700px;
 }
 
-.reviews-date {
+.reviews-body__date {
 	margin-bottom: 10px;
-	@include font(Light,0.875em);
+	@include font(Light,14px);
 }
 
-.reviews-name {
+.reviews-body__name {
 	margin-bottom: 10px;
-	@include font(Bold,1.125em);
+	@include font(Bold,18px);
 }
 
-.reviews-text {
+.reviews-body__text {
 	line-height: 1.67;
-	@include font(Light,1.125em);
+	@include font(Light,18px);
 }
 
 .page-selection {
@@ -54,8 +55,8 @@
 	margin-bottom: 75px;
 }
 
-.page-selection-text {
-	@include font(Light,0.875em);
+.page-selection__text {
+	@include font(Light,14px);
 }
 
 .page-selection__list {
@@ -69,7 +70,7 @@
 }
 
 .page-selection__link {
-	@include font(Bold,0.875em);
+	@include font(Bold,14px);
 	color: black;
 	display: block;
 	width: 25px;
@@ -81,7 +82,7 @@
 	}
 }
 
-.link-pic {
+.page-selection__pic {
 	background: url(../img/icon/prev-but.png) center no-repeat;
 	text-indent: -99999px;
 	&:hover {
@@ -89,7 +90,7 @@
 	}
 }
 
-.link-pic2 {
+.page-selection__pic2 {
 	background: url(../img/icon/next-but.png) center no-repeat;
 	text-indent: -99999px;
 	&:hover {
@@ -98,6 +99,7 @@
 }
 
 .reviews-form {
+	@extend %clearfix;
 	margin-bottom: 70px;
 	width: 700px;
 	background-color: #f5f5f5;
@@ -105,7 +107,7 @@
 }
 
 .reviews-form__title {
-	@include font(Bold,3.0625em);
+	@include font(Bold,49px);
 }
 
 .form-field-left {
@@ -121,7 +123,7 @@
 .form-field__name {
 	display: inline-block;
 	margin-bottom: 10px;
-	@include font(Light,0.875em);
+	@include font(Light,14px);
 }
 
 .form-field__input {
@@ -165,55 +167,60 @@
 	display: inline-block;
 }
 
-.form-reviews__photo {
+.reviews-form__photo {
 	float: left;
-	display: block;
+	height: 50px;
 }
 
 .form-field__photo {
 	display: block;
-	margin-bottom: 10px;
-	@include font(Light,0.875em);
+	@include font(Light,14px);
 }
 
 .main-addfeed__value {
   display: none;
 }
+
 .main-addfeed__label-value {
-  position: relative;
   cursor: pointer;
-  margin: 0px 10px 0px 30px;
+  display: inline-block;
+  margin: 3px 0 0 10px;
   font-family: OpenSans-Light;
  }
 
-.main-addfeed__label-value:after {
-  position: absolute;
-  left: -30px;
+.main-addfeed__label-value:before {
+  position: relative;
+  display: inline-block; 
+  top: 4px;
+  margin-right: 5px;
   content: '';
   width: 20px;
   height: 20px;
   border: 1px solid #cacaca;
   border-radius: 50%;
 }
-.main-addfeed__value:checked +.main-addfeed__label-value:before {
-  position: absolute;
-  left: -23px;
-  top: 7px;
+
+.main-addfeed__value:checked +.main-addfeed__label-value:after {
   content: '';
+  position: relative;
+  left: 7px;
+  bottom: 16px;
+  display: block;
   width: 8px;
   height: 8px;
-  background-color: $orange;
+  background: $orange no-repeat;
   border-radius: 50%;
-  border: none;
 }
-.main-addfeed__value:checked +.main-addfeed__label-value:after {
+
+.main-addfeed__value:checked +.main-addfeed__label-value:before {
   border: 1px solid $orange;
 }
+
 .main-addfeed__value:checked +.main-addfeed__label-value {
   color: $orange;
 }
 
-.reviews-button {
+.reviews-form__button {
 	float: right;
 	min-width: 125px;
 	min-height: 45px;
@@ -223,5 +230,5 @@
 	border: none;
 	text-transform: uppercase;
 	cursor: pointer;
-	@include font(Bold,0.75em);
+	@include font(Bold,12px);
 }
