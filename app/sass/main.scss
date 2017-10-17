@@ -5,6 +5,10 @@
 .main-content{
 	float: left;
 	width: 83%;
+	@include tablets {
+		float: none;
+		width: 100%;
+	}
 }
 
 .about-company {
@@ -17,25 +21,39 @@
 
 .about-company__bg {
 	background-color: rgba(0,0,0,.5);
-	height: 355px;
+	height: rem(355px);
+	@include phones {
+		height: 185px;
+	}
 }
 
 .about-company__title {
-	padding: 143px 65px;
+	padding: rem(143px) rem(65px);
 	color: $white;
 	text-transform: uppercase;
-	@include font(Bold,49px);
+	@include font(Bold,rem(49px));
+	@include phones {
+		padding: 79px 20px;
+		font-size: 20px;
+	}
 }
 
 .info-content {
-	width: 700px;
+	width: rem(700px);
+	@include laptop {
+		width: 100%;
+	}
+	@include phones {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 
 .info-text {
 	line-height: 29px;
-	@include font(Light,18px);
+	@include font(Light,rem(18px));
 	p {
-		padding-top: 21px;
+		padding-top: rem(21px);
 	}
 	strong {
 		font-family: OpenSans-Bold;
@@ -43,27 +61,37 @@
 }
 
 .info-text__list {
-	margin-top: 7px;
-	margin-bottom: 22px;
+	margin-top: rem(7px);
+	margin-bottom: rem(22px);
 	li {
 		list-style-type: square;
-		margin-left: 30px;
-		margin-bottom: 5px;
-		padding-left: 10px;
+		margin-left: rem(30px);
+		margin-bottom: rem(5px);
+		padding-left: rem(10px);
 	}
 }
 
 .info-block {
 	background-color: black;
-	height: 144px;
+	height: rem(144px);
 	width: 100%;
-	margin-bottom: 55px;
+	margin-bottom: rem(55px);
+	@include tablets {
+		height: auto;
+		margin-bottom: rem(25px);
+	}
 	p {
-		margin-left: 30px;
-		padding: 10px 0px;
+		margin-left: rem(30px);
+		padding: rem(10px) rem(0px);
 		line-height: 29px;
 		color: $white;
-		@include font(Light,18px);
+		@include font(Light,rem(18px));
+		@include tablets {
+			line-height: 1.42;
+			@include font(Light,rem(17px));
+			padding: rem(10px) rem(15px);
+			margin-left: 0;
+		}
 	}
 	strong {
 		font-family: OpenSans-Bold;
@@ -71,26 +99,51 @@
 }
 
 .partners {
-	margin-bottom: 37px;
+	margin-bottom: rem(37px);
+	@include phones {
+		text-align: center;
+		margin-bottom: 0;
+	}
 }
 
 .partners__title {
 	text-transform: uppercase;
-	@include font(Bold,49px);
+	@include font(Bold,rem(49px));
 }
 
 .partners__list {
-	margin-top: 32px;
+	margin-top: rem(32px);
+	@include tablets {
+		padding: 0 40px 0 40px;
+	}
 }
 
 .partners__item {
 	text-align: center;	
-	width: 160px;
+	width: 161px;
 	height: 80px;
 	display: inline-block;
-	margin-left: 105px;
+	margin-left: rem(104px);
 	&:nth-child(3n+1) {
 		margin-left: 0;
+	}
+	@include laptop {
+		margin-left: rem(70px);
+	}
+	@include tablets {
+		&:nth-child(4) {
+			margin-left: 30px;
+		}
+		&:nth-child(2n+1) {
+			margin-left: 0px;
+		}
+		margin-left: 30px;
+	}
+	@include phones {
+		margin-left: 0;
+		&:nth-child(4) {
+			margin-left: 0px;
+		}
 	}
 }
 
@@ -99,5 +152,8 @@
 	&:hover {
 		filter: none;
 		transition: 2s;
+	}
+	@include phones {
+		vertical-align: middle;
 	}
 }

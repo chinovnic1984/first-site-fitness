@@ -1,21 +1,40 @@
 .footer {
 	@extend %clearfix;
 	background-color: #131415;
-	min-height: 76px;
+	min-height: rem(76px);
+	@include phones {
+		min-height: 59px;
+	}
 }
 
 .footer-copyrighting {
 	float: left;
 	width: 25%;
+	@include laptop {
+		width: 29%;
+	}
+	@include tablets {
+		width: 44%;
+	}
+	@include phones {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .author {
-	padding: 9px 0px;
+	padding: rem(9px) rem(0px);
+	@include desktop {
+		padding: rem(12px) rem(0px);
+	}
 }
 
 .author__text {
 	color: #efefef;
-	@include font(Light,14px);
+	@include font(Light,rem(14px));
+	@include desktop {
+		@include font(Light,rem(12px));
+	}
 }
 
 .author__link {
@@ -31,23 +50,43 @@
 	text-align: center;
 	float: left;
 	width: 58%;
+	@include laptop {
+		width: 50%;
+	}
+	@include tablets {
+		width: 20%;
+		display: none;
+	}
 }
 
 .footer-socials {
-	padding: 10px 0px;
+	padding: rem(10px) rem(0px);
 	float: right;
 	width: 17%;
+	@include laptop {
+		width: 21%;
+		padding: rem(12px) rem(0px);
+	}
+	@include tablets {
+		width: 36%;
+	}
+	@include phones {
+		display: none;
+	}
 }
 
 .socials__title {
-	margin-bottom: 10px;
+	margin-bottom: rem(10px);
 	color: #efefef;
-	@include font(Bold,14px);
+	@include font(Bold,rem(14px));
+	@include desktop {
+		@include font(Bold,rem(12px));
+	}
 }
 
 .socials__item{
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: rem(10px);
 	&:first-child {
 		margin-left: 0;
 	}

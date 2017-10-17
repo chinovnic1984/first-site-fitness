@@ -2,36 +2,51 @@
 	background-color: #131415;
 	min-height: 76px;
 	@extend %clearfix;
+	@include phones {
+		min-height: 59px;
+	}
 }
 
 .header-left {
 	float: left;
+	@include phones {
+		margin-left: 20px;
+	}
 }
 
 .logo {
-	padding: 25px 0px 25px 0px;
+	padding: rem(25px) rem(0px) rem(25px) rem(0px);
 }
 
 .logo__link {
 	color: $orange;
 	font: {
 		family: Gora-Free;
-		size: 18px;
+		size: rem(18px);
+	}
+	@include phones {
+		font-size: rem(12px);
 	}
 }
 
 .header-right {
 	float: right;
+	@include phones {
+		margin-right: 20px;
+	}
 }
 
 .contacts {
-	padding: 12px 0px;
+	padding: rem(12px) rem(0px);
 	text-align: right;
 }
 
 .contacts__phone-link {
 	color: $white;
-	@include font(Bold,21px)
+	@include font(Bold,rem(21px));
+	@include phones {
+		@include font(Bold,rem(15px));
+	}
 }
 
 .contacts__schedule {
@@ -41,31 +56,31 @@
 .contacts__schedule-link {
 	text-decoration: underline;
 	color: #b46f14;
-	@include font(Bold,14px);
+	@include font(Bold,rem(14px));
 }
 
 .schedule-popup {
 	display: none;
 	position: absolute;
-	top: 40px;
-	left: 8px;
-	width: 162px;
-	border-radius: 5px;
+	top: rem(40px);
+	left: rem(8px);
+	width: rem(162px);
+	border-radius: rem(5px);
 	background-color: #f4f4f4;
 	z-index: 40;
-	padding: 19px;
+	padding: rem(19px);
 	text-align: left;
 }
 
 .schedule-popup:before {
 	content: "";
 	position: absolute;
-	width: 16px;
-	height: 16px;
+	width: rem(16px);
+	height: rem(16px);
 	background-color: #f4f4f4;
 	transform: rotate(45deg);
-	bottom: 73px;
-	left: 140px;
+	bottom: rem(73px);
+	left: rem(140px);
 	z-index: -1;
 }
 
@@ -74,11 +89,11 @@
 }
 
 .schedule-popup__time {
-	@include font(Bold,14px);
+	@include font(Bold,rem(14px));
 	color: $orange;
-	margin-bottom: 5px;
+	margin-bottom: rem(5px);
 }
 
 .schedule-popup__lunch {
-	@include font(Light,14px);
+	@include font(Light,rem(14px));
 }

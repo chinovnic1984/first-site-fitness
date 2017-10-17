@@ -8,8 +8,20 @@ html,body {
 	padding: 0;
 }
 
+html {
+	font-size: 16px;
+	@include laptop {
+		font-size: 15px;
+	}
+	@include tablets {
+		font-size: 14px;
+	}
+	@include phones {
+		font-size: 13px;
+	}
+}
+
 body {
-	font-size: 16px; 
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 }
@@ -28,26 +40,47 @@ li {
 }
 
 .container {
-	width: $container-width;
+	max-width: $container-width;
 	margin: 0 auto;
+	@include desktop {
+		width: 970px;
+	}
+	@include laptop {
+		width: 750px;
+	}
+	@include tablets {
+		width: 450px;
+	}
+	@include phones {
+		width: auto;
+	}
 }
 
 .wrapper {
-	min-width: $container-width + 20px;
+	// min-width: $container-width + 20px;
 	position: relative;
 	overflow: hidden;
 	min-height: 100%;
 }
 
-.empty {
+.wrapper:after {
+	content: '';
 	height: $footer-height;
+	display: block;
+	@include phones {
+		height: 59px;
 	}
+}
 
 .footer {
-	min-width: $container-width + 20px;
+	// min-width: $container-width + 20px;
 	height: $footer-height;
 	margin-top: -$footer-height;
 	position: relative;
+	@include phones {
+		height: 59px;
+		margin-top: -59px;
+	}
 }
 
 * {

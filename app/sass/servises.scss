@@ -1,39 +1,86 @@
 .servises-title {
-	margin-bottom: 37px;
+	margin-bottom: rem(37px);
+	@include phones {
+		text-align: center;
+		margin-bottom: 15px;
+	}
 }
 
 .servises-title__name {
-	@include font(Bold,45px);
+	@include font(Bold,rem(45px));
+	@include phones {
+		font-size: 30px;
+	}
 }
 
 .servises-block__list {
-	margin-bottom: 21px;
+	margin-bottom: rem(21px);
+	@include phones {
+		text-align: center;
+		margin-bottom: 0;
+	}
 }
 
 .servises-block__item {
 	display: inline-block;
-	margin-left: 42px;
-	margin-bottom: 45px;
-	width: 260px;
+	margin-left: rem(42px);
+	margin-bottom: rem(45px);
+	width: rem(260px);
 	vertical-align: top;
+	@include desktop {
+		width: rem(235px);
+	}
+	@include laptop {
+		width: rem(190px);
+	}
+	@include tablets {
+		width: rem(230px);
+		margin-left: 0;
+		margin-bottom: rem(45px);
+	}
+	@include phones {
+		margin-left: 0;
+		margin-bottom: 15px;
+	}
 }
 .servises-block__item:nth-child(3n+1) {
-	margin: 0px;
+	margin: rem(0px);
+	@include tablets {
+		margin-bottom: rem(45px);
+	}
+	@include phones {
+		margin-bottom: 15px;
+	}
+}
+
+.servises-block__item:nth-child(2n+2) {
+	@include tablets {
+		margin-left: rem(50px);
+	}
+	@include phones {
+		margin-left: 0;
+	}
 }
 
 .servises-block__image {
-	margin-right: 2px;
-	max-width: 260px;
-	max-height: 155px;
+	margin-right: rem(2px);
+	max-width: rem(260px);
+	max-height: rem(155px);
+}
+
+
+.servises-block__pic {
+	width: 100%;
+	height: auto;
 }
 
 .servises-block__name {
-	padding-top: 20px;
-	@include font(Bold,18px);
+	padding-top: rem(20px);
+	@include font(Bold,rem(18px));
 }
 
 .servises-block__description {
-	padding-top: 5px;
+	padding-top: rem(5px);
 	line-height: 21px;
-	@include font(Light,14px);
+	@include font(Light,rem(14px));
 }
